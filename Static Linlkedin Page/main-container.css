@@ -1,0 +1,721 @@
+/* ****** left sidebar starts here ****** */
+
+body{
+    background-color: rgb(212, 215, 219);
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 52% 28%;
+    gap: 1.4rem;
+    width: 85%;
+    margin: 1rem auto;
+}
+
+/* top sidebar styles */
+aside .sidebar{
+    background: #fff;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.sidebar .top{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(82,92,105);
+}
+
+.sidebar img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: -10%;
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid #fff;
+}
+
+aside .sidebar .profile{
+    position: relative;
+    text-align: center;
+    top: -8%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.sidebar .profile a{
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar .profile a:hover{
+  text-decoration: underline;   
+}
+
+.sidebar .profile small{
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.sidebar .view{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.1rem 0;
+    top: -6%;
+}
+
+.sidebar .view .views{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+    font-weight: 100;
+    padding-bottom: 0.4rem;
+}
+
+sidebar .view .views:hover{
+   background-color: gray;
+}
+.sidebar .view .views h6{
+    color: gray;
+    font-weight: 100;
+}
+.sidebar .view .views a{
+    color: blue;
+    text-decoration: none;
+    font-size-adjust: 0.8rem;
+}
+
+.sidebar .premium{
+    position: relative;
+    top: -4%;
+}
+
+.sidebar .premium h6{
+    color: gray;
+    font-weight: 100;
+    margin-left: 0.2rem;
+}
+
+.sidebar .premium a{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    color: #000;
+}
+
+.sidebar .premium a img{
+    width: 18px;
+    height: 17px;
+}
+
+hr#premium,
+hr#view,
+hr#profile{
+    margin: 0.5rem 0;
+}
+
+.sidebar .items img{
+    width: 32px;
+    height: 32px;
+}
+
+.items{
+    position: relative;
+    top: -5%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: 0.5rem;
+    color: gray;
+    cursor: pointer;
+}
+
+/* bottom sidebar */
+aside .recent_jobs{
+    background: #fff;
+    width: 100%;
+    height: 92vh;
+    margin-top: 0.2rem;
+    position: relative;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+aside .recent_jobs .recent{
+    margin: 1rem;
+    color: gray;
+}
+
+aside .recent_jobs .recent h6{
+    font-weight: 100;
+}
+
+aside .recent_jobs .recent .one{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.1rem;
+    color: rgb(83,83,83);
+}
+
+aside .recent_jobs .recent .one img{
+    font-size: 0.8rem;
+}
+
+aside .recent_jobs .groups{
+    margin: 2rem 0 0 1rem;
+}
+
+aside .recent_jobs .groups h5:first-child{
+    color: #1281ef;
+    font-size: 0.7rem;
+}
+
+aside .recent_jobs .groups .two{
+    display: flex;
+    align-items: center;
+    margin-top: 0.7rem;
+    gap: 0.1rem;
+    color: rgb(83,83,83);
+}
+
+.groups .show{
+    display: flex;
+    margin-top: 1rem;
+    gap: 0.5rem;
+    color: gray;
+}
+
+aside .events{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem 0 1rem;
+}
+
+aside .events h6:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+aside .events img{
+    color: gray;
+    cursor: pointer;
+}
+
+.discover{
+    text-align: center;
+    margin: 2rem 0 0 0;
+    border-top: 1px solid rgb(144,144,144);
+    padding-top: 1rem;
+}
+
+.discover a{
+    text-decoration: none;
+    color: gray;
+}
+/* ***** left sidebar ended here ***** */
+
+/* ****** main section of page ****** */
+
+main{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 65vh;
+    position: relative;
+}
+
+main #close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: gray;
+}
+
+main .event{
+    margin: 1.5rem 0 0 1rem;
+}
+
+main .event h3{
+    font-weight: 200;
+}
+
+main .box img{
+   width: 95%;
+   height: 200px;
+   margin-top: 10px;
+   margin-left: 15px;
+}
+
+main .box .content{
+    padding: 0.5rem 1rem;
+}
+
+main .box .content p{
+    font-weight:100;
+}
+
+hr#comments{
+    margin: 0.5rem 0;
+}
+
+main .box .comments img{
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0.5rem 0;
+}
+
+main .box .comments .comment_images{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    color: gray;
+    cursor: pointer;
+    gap: 0.1rem;
+}
+
+main .box .comments .comment_images h6{
+    padding-left: 0.9rem;
+}
+
+.main_section .box .comment_images img:hover{
+    background: gray;
+}
+
+main .box .updates img{
+    width: 25px;
+    height: 25px;
+    margin:0.3rem 0 0.5rem 1.5rem;
+}
+
+main .box .updates .update_images{
+    display: flex;
+    align-items: center;
+    margin-left: 0.1rem;
+    color: black;
+    cursor: pointer;
+    gap: 0.1rem;
+}
+
+.main_section .box .update_images img:hover{
+    background: gray;
+}
+
+/* middle bar of main section */
+
+main .media{
+    background: #fff;
+    height: 23vh;
+    margin-top: 1rem;
+    border-radius: 0.8rem;
+}
+
+main .media .search{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main .media .search img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main .media .search input{
+    border-radius: 5rem;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+main .media .search input:hover{
+    background: rgb(233,233,233);
+} 
+
+main .media .posts{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.6rem 2rem;
+}
+
+main .media .posts .post{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.6rem 0.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+main .media .posts .post:hover{
+    background: rgb(235,235,235);
+    border-radius: 0.2rem;
+}
+
+main .media .posts .post h5{
+    font-weight: 400;
+}
+
+/* below part of main section */
+
+main .below_main{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 73vh;
+    position: relative;
+}
+
+main #below_close{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    color: gray;
+}
+
+main .below_event{
+    margin-top: 1rem;
+    padding: 15px;
+}
+
+main .below_event h3{
+    font-weight: 200;
+}
+
+main .below_box video{
+   width: 95%;
+   height: 250px;
+   margin-top: 1px;
+   margin-left: 15px;
+   border: 1px solid black;
+   background-color: blue;
+}
+
+main .below_box .below_content{
+    padding: 0.5rem 1rem;
+}
+
+main .below_box .below_content p{
+    font-weight:100;
+}
+
+hr#below_comments{
+    margin: 0.5rem 0;
+}
+
+main .below_box .below_comments img{
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0.5rem 0;
+}
+
+main .below_box .below_comments .below_comment_images{
+    display: flex;
+    align-items: center;
+    margin-left:1rem ;
+    color: gray;
+    cursor: pointer;
+    gap: 0.1rem;
+}
+
+main .below_box .below_comments .below_comment_images h6{
+    padding-left: 0.9rem;
+}
+
+.below_main .below_box .below_comment_images img:hover{
+    background: gray;
+}
+
+main .below_box .below_updates img{
+    width: 25px;
+    height: 25px;
+    margin:0.3rem 0 0.5rem 1.5rem;
+}
+
+main .below_box .below_updates .below_update_images{
+    display: flex;
+    align-items: center;
+    margin-left:0.1rem;
+    color: black;
+    cursor: pointer;
+    gap: 0.1rem;
+}
+
+.below_main .below_box .below_update_images img:hover{
+    background: gray;
+}*/
+/* ***** main section ended here ***** */
+
+/* ********* right sidebar starts here ********* */
+
+/* up side of right-sidebar */
+
+.right_side .top_right{
+    background:#fff;
+    border-radius: 0.8rem;
+    height: 56vh;
+}
+
+.right_side .top_right .news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 15px 15px 0 15px;
+}
+
+.right_side .news h4{
+    font-weight: 400;
+}
+
+.right_side .latest_news{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_news:hover{
+    background: rgb(231,231,231);
+}
+
+.right_side .latest_news .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_news .one h5{
+    font-weight: 500;
+}
+
+.right_side .latest_news .one img{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.right_side .latest_news .two{
+    margin: 0 1.9rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.right_side .show_more{
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .show_more h5{
+    font-weight: 500;
+}
+
+/* middle side of right-sidebar */
+
+.right_side .middle_right{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 56vh;
+}
+
+.right_side .middle_right .courses{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem;
+    padding: 15px 15px 0 15px;
+}
+
+.right_side .courses h4{
+    font-weight: 400;
+}
+
+.right_side .latest_courses{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .latest_courses:hover{
+    background: rgb(231,231,231);
+}
+
+.right_side .latest_courses .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .latest_courses .one h5{
+    font-weight: 500;
+}
+
+.right_side .latest_courses .one img{
+    font-size: 0.5rem;
+    color: gray;
+}
+
+.right_side .latest_courses .two{
+    margin: 0 1.9rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.right_side .enroll_now{
+    display: flex;
+    gap: 0.5rem;
+    color: gray;
+    align-items: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.right_side .enroll_now h5{
+    font-weight: 500;
+}
+
+/* bottom side of right sidebar */
+
+.right_side .bottom_right{
+    background: #fff;
+    border-radius: 0.8rem;
+    height: 51vh;
+}
+
+.right_side .bottom_right .feeds{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem;
+    padding: 15px 15px 0 15px;
+}
+
+.right_side .feeds h4{
+    font-weight: 400;
+}
+
+.right_side .follow_feeds{
+    padding: 1rem 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+
+.right_side .follow_feeds:hover{
+    background: rgb(231,231,231);
+}
+
+.right_side .follow_feeds .one{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.right_side .follow_feeds .one h5{
+    font-weight: 500;
+}
+
+.right_side .follow_feeds .one img{
+    font-size: 0.5rem;
+    color: gray;
+    width: 50px;
+    height: 50px;
+}
+
+.right_side .follow_feeds .two{
+    margin: -1rem 4.7rem;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.right_side .bottom_right .follow_now1{
+    background:white;
+    width: 30%;
+    padding: 0 0.8rem;
+    margin: 1rem 6rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.right_side .bottom_right .follow_now1 input[type='follow']{
+    width: 3rem;
+    height: 30px;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+/*search input-box style of placeholder*/
+.right_side .bottom_right .follow_now1 input[type='follow']::placeholder{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 500;
+}
+
+/*search bar image of left side*/
+.right_side .bottom_right .follow_now1 img{
+    font-size: 0.8rem;
+    color: black;
+}
+
+
+
+
+.right_side .bottom_right .follow_now2{
+    background:white;
+    width: 40%;
+    padding: 0 0.8rem;
+    margin: 1rem 6rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+}
+
+.right_side .bottom_right .follow_now2 input[type='follow']{
+    width: 3rem;
+    height: 30px;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+/*search input-box style of placeholder*/
+.right_side .bottom_right .follow_now2 input[type='follow']::placeholder{
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 500;
+}
+
+/*search bar image of left side*/
+.right_side .bottom_right .follow_now2 img{
+    font-size: 0.8rem;
+    color: black;
+}
+
+hr#follow_now1{
+    margin: 0.1rem 0;
+}

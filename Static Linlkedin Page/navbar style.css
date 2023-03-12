@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background: rgb(235,235,235);
+}
+
+/*Navbar styling for all elements of navbar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 4rem;
+    box-shadow: 2px 2px 5px #ccc;
+    background-color: white;
+    border: 0.2rem;
+}
+
+/* left & right container style */
+nav .left-icon-container,
+nav .right-icon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ***** left side style of navbar starts here ***** */
+nav .left-icon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+    padding-left: 2.2rem;
+}
+
+/*style of input element of left-icon-container*/
+nav .left-icon-container .input{
+    background:rgb(230, 245, 246);
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    border-radius: 0.2rem;
+}
+
+/*search bar style of input-box*/
+nav .left-icon-container .input input[type='search']{
+    width: 14rem;
+    height: 30px;
+    border: none;
+    background: transparent;
+}
+
+/*search input-box style of placeholder*/
+nav .left-icon-container .input input[type='search']::placeholder{
+    font-size: 0.9rem;
+    color: rgb(49,49,49);
+    font-weight: 100;
+}
+
+/*search bar image of left side*/
+nav .left-icon-container .input img{
+    font-size: 0.8rem;
+    color: gray;
+}
+ 
+/* linkedin logo*/
+nav > .left-icon-container > .logo{
+    color: #0a66c2;
+    padding: 1px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+/* Navbar links of left container on mouse-hover*/
+nav > .left-icon-container > .input:hover{
+    background-color: gray;
+}
+
+/* ***** right side style of navbar starts here ***** */
+
+/* Navbar links of right container */
+nav > .right-icon-container > a{
+    float: left;
+    text-align: center;
+    padding: 0.5rem;
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Navbar links of right container on mouse-hover */
+nav > .right-icon-container > a:hover{
+    background-color: papayawhip;
+}
+
+/*style of images of right-icon-container */
+nav > .right-icon-container  img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    color: gray;
+} 
+
+/* Current/active navbar link */
+.active{
+    background-color: #dff8ee;
+}
+
+nav .right-icon-container .me img:first-child{
+    background:gray ;
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .right-icon-container .me .dropdown a{
+    text-decoration: none;
+    gap: 1rem;
+}
+
+nav .right-icon-container .me .dropdown{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: gray;
+}
+
+nav > .right-icon-container > .me img:hover{
+    background-color: gray;
+}
+
+nav .right-icon-container .work img:first-child{
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .right-icon-container .work .dropdown a{
+    text-decoration: none;
+    gap: 1rem;
+}
+
+nav .right-icon-container .work .dropdown{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 1rem;
+    color: gray;
+}
+
+nav > .right-icon-container > .work img:hover{
+    background-color: gray;
+}
+
+nav .right-icon-container a h3{
+    text-decoration: none;
+    font-size: 0.8rem;
+    width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    color: blue;
+}
+
+nav .right-icon-container a h3:hover{
+    text-decoration: underline;
+}
